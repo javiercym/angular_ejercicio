@@ -6,6 +6,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,9 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     SharedModule,
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

@@ -34,21 +34,24 @@
         
 		<div class="form">
 			<h1>Agrega tus datos</h1>
-			<form action="">
+			<form [formGroup]="validarFormulario">
 				<div class="flex-rev">
-					<input type="text" placeholder="Ingrese su nombre completo" name="name" id="name" />
+					<input type="text" formControlName="nombre" placeholder="Ingrese su nombre completo" id="nombre" />
 					<label for="name">Nombre completo</label>
 				</div>
 				<div class="flex-rev">
-					<input type="email" placeholder="email@gmail.com" name="email" id="email" />
+					<input type="email" formControlName="email" placeholder="email@gmail.com"  id="email" />
 					<label for="email">Su Email</label>
 				</div>
 
 				<div class="flex-rev">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea id="text" formControlName="text" cols="30" rows="10"></textarea>
 					<label for="message">Mensaje que nos desea enviar</label>
 				</div>
-				<button>Enviar Email</button>
+				<div *ngIf="validarFormulario.valid">
+					<p>todos los datos son válidos</p>
+				</div>
+				<button [disabled]="validarFormulario.invalid" type="button" class="btn btn-outline-secondary">Enviar</button>
 			</form>
 		</div>
 	</div>

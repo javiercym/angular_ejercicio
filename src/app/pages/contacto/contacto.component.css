@@ -47,26 +47,8 @@
 }
 
 
-a,button{
-    display: inline-block;
-    padding: 14px 30px;
-    text-decoration: none;
-    color: #243342;
-    letter-spacing: 1.2px;
-    font-size: 14px;
-    border: 1px solid #243342;
-    border-radius: 7px;
-    margin-right: 20px;
-    transition: 0.15s ease-in-out;
-}
-a.focus, button{
-    color: white;
-    background: #243342;
-}
-a.focus:hover,button:hover{
-	cursor: pointer;
-   color: #1bf1dc;
-}
+
+
 a:hover {
     background-color: #243342;
     color: #16f1d7;
@@ -161,11 +143,6 @@ a.active {
 .flex-rev textarea{
 	height: 150px;
 }
-button{
-	-webkit-appearance: none;
-	margin-right: 0;
-}
-
 .info {
     position: relative;
     padding: 20px;
