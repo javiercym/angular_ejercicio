@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width:30px;
+}
+.navbar{
+    padding: 10px 40px ;
+}
+.navbar-nav .nav-link.active{
+    color: #ff0000;
+}
+.btn-buscar{
+    background-color: #ff0000;
+    color: #ffffff; 
+}
+.btn-buscar:hover{
+    background-color: #ff0000a8;
+    color: #ffffff; 
+}
