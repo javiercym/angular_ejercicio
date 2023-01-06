@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
       url:'/cv/inicio'
     },
     {
-      titulo:'sobre-mi',
+      titulo:'sobre mi',
       url:'/cv/sobre-mi'
     },
     {

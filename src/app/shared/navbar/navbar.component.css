@@ -3,10 +3,12 @@
     padding: 0;
 }
 .logo{
-    width:30px;
+    width:40px;
+    margin: 0px 30px;
 }
 .navbar{
-    padding: 10px 40px ;
+    padding: 15px 40px ;
+    background-color: #000000 !important;
 }
 .navbar-nav .nav-link.active{
     color: #ff0000;
@@ -18,4 +20,10 @@
 .btn-buscar:hover{
     background-color: #ff0000a8;
     color: #ffffff; 
+}
+.nav-link:hover{
+    color: #ff0000;
+}
+.nav-link{
+    font-size: 20px;
 }

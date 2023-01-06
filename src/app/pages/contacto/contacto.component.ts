@@ -15,9 +15,7 @@ export class ContactoComponent implements OnInit{
     this.validarFormulario = this.formBuilder.group({
       nombre:['', 
         [
-          Validators.required,
-          Validators.minLength(10)
-          
+          Validators.required
         ]
       ],
       email:['', 

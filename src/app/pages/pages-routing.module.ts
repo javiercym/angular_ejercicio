@@ -12,10 +12,11 @@ const routes: Routes = [
       {path:'inicio',component:InicioComponent},
       {path:'sobre-mi',component:SobreMiComponent},
       {path:'contacto',component:ContactoComponent},
+      
     ]
   },
   {
-    path:'**',redirectTo:'cv'
+    path:'**',redirectTo:'cv/inicio'
   }
 
 ];
