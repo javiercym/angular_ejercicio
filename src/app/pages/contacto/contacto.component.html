@@ -2,9 +2,7 @@
     <div class="contenido">  
         <div class="presentacion">
             <p class="bienvenida">Escribeme</p>
-            <h2>Encontremos juntos la solucion que necesites</h2>
-            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
-
+            <h2>Encontremos juntos la solucion que necesitas</h2>
         </div>
     </div>
 </section>
@@ -41,12 +39,12 @@
 				</div>
 				<div class="flex-rev">
 					<input type="email" formControlName="email" placeholder="email@gmail.com"  id="email" />
-					<label for="email">Su Email</label>
+					<label for="email">Su Email:</label>
 				</div>
 
 				<div class="flex-rev">
-                    <textarea id="text" formControlName="text" cols="30" rows="10"></textarea>
-					<label for="message">Mensaje que nos desea enviar</label>
+                    <textarea id="text" formControlName="text" cols="30" rows="10" placeholder="Mensaje"></textarea>
+					<label for="message">Mensaje:</label>
 				</div>
 				<div *ngIf="validarFormulario.valid">
 					<p>todos los datos son válidos</p>

@@ -7,6 +7,7 @@ import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { EjemplosComponent } from './ejemplos/ejemplos.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     PagesComponent,
     InicioComponent,
     ContactoComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    EjemplosComponent
   ],
   imports: [
     SharedModule,

@@ -16,5 +16,9 @@ import { Injectable } from '@angular/core';
         titulo:'contacto',
         url:'/cv/contacto'
     },
+    {
+      titulo:'Ejemplos',
+      url:'/cv/ejemplos'
+    }
   ]
 } 

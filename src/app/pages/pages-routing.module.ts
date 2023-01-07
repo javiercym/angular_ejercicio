@@ -4,6 +4,7 @@ import { PagesComponent } from './pages.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { EjemplosComponent } from './ejemplos/ejemplos.component';
 
 const routes: Routes = [
   
@@ -12,6 +13,7 @@ const routes: Routes = [
       {path:'inicio',component:InicioComponent},
       {path:'sobre-mi',component:SobreMiComponent},
       {path:'contacto',component:ContactoComponent},
+      {path:'ejemplos',component:EjemplosComponent},
       
     ]
   },

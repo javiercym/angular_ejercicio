@@ -1,0 +1,80 @@
+<div class="container espacio">
+    <h4> Les mostraré algunos ejemplos con directivas de angular </h4>
+    <br>
+    <h6>ngModel:</h6>
+    <div class="row">
+        <div class="col-4">
+            <input [(ngModel)]="textoBuscar" type="text" class="form-control mr-3" id="inputBuscar" placeholder="Escribir titulo a buscar">
+        </div>
+        <div class="col-4">
+            <button (click)="Buscar()" type="button" class="btn btn-outline-secondary buscar">Buscar</button>
+            <button (click)=" Borrar()" type="button" class="btn btn-outline-secondary">Borrar</button>
+        </div>
+    </div>
+    <br>
+    <h6>NgFor:</h6>
+    <div id="rellenar" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"> 
+        <div class="col" *ngFor="let item of menuItems">
+            <div class="card shadow-sm">
+                <img class="img" src="{{item.imagen}}"> <br>
+                <h4 class="text-center">{{item.nombre}}</h4>
+                <div class="card-body">
+                    <p class="text-center">
+                        <span>{{item.descipcion}}</span>
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center aling-items-center pb-4">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-dark">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h6>ngIf</h6>
+    <div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"[(ngModel)]="check" (ngModelChange)="onModelChange()" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            checkbox 
+            </label>
+        </div>
+        <div *ngIf="mostrarMensaje">
+            Activa el checkbox para mostrar mensaje oculto.
+        </div>
+        <div *ngIf="mostrarMensajeOculto">
+            El checkbox ha sido activado. El mensaje oculto es...
+        </div>
+    </div>
+    <br><br>
+    <h6>ngSwtich - ngCase -	ngStyle</h6>
+
+    <div>
+        <span>Escribe un texto y te lo mostrare con el color que elijas</span>
+        <div class="col-4">
+            <input class="form-control" type="text" placeholder="Texto a mostrar" [(ngModel)]="texto">
+        </div> <br>
+        <div class="col-4">
+            <select class="form-select" aria-label="Default select" [(ngModel)]="color">
+                <option selected>Seleccionar operación</option>
+                <option value="1">Rojo</option>
+                <option value="2">verde</option>
+                <option value="3">Azul</option>
+                <option value="4">Amarillo</option>
+            </select>
+        </div><br>
+        <div class="col-4 opciones">
+            <div [ngSwitch]="color">
+                <p *ngSwitchCase="'Seleccionar operación'" [ngStyle]="{'color': 'black'}">Resultado: {{ resultado }}</p>
+                <p *ngSwitchCase="1" [ngStyle]="{'color': 'Red'}"> {{ texto }}</p>
+                <p *ngSwitchCase="2" [ngStyle]="{'color': 'green'}"> {{ texto }}</p>
+                <p *ngSwitchCase="3" [ngStyle]="{'color': 'blue'}"> {{ texto }}</p>
+                <p *ngSwitchCase="4" [ngStyle]="{'color': 'yellow'}"> {{ texto }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
